@@ -1,0 +1,9 @@
+Host homelab
+        HostName 192.168.0.50
+        User tom
+        IdentityFile ~/.ssh/id_ed25519_hl
+  LocalForward 3000 127.0.0.1:3000
+  # Port for FastAPI / Python
+  LocalForward 8000 127.0.0.1:8000
+  # ADD THIS LINE for Portainer
+  LocalForward 9000 127.0.0.1:9000
